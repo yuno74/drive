@@ -36,9 +36,15 @@ git clone https://github.com/viperadnan-git/google-drive-telegram-bot
 ```sh 
 cd google-drive-telegram-bot
 ```
-- Install requirements with pip3
+- Install all and run it
 ```sh 
+cd drive
+sudo pip3 install virtualenv
+virtualenv -p python3 VENV
+. ./VENV/bin/activate
 pip3 install -r requirements.txt
+nohup python3 -m bot
+
 ```
 
 ### Configuration
